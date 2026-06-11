@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MyCollection Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Minha Coleção</h1>
+
+    <p>Total de Itens: <span id="total">0</span></p>
+    <p>Repetidos: <span id="repetidos">0</span></p>
+    <p>Itens Únicos: <span id="unicos">0</span></p>
+
+    <input type="text" id="busca" placeholder="Pesquisar">
+
+    <hr>
+
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Nome do item" required>
+
+        <input type="text" id="imagem" placeholder="Link da imagem" required>
+
+        <select id="raridade">
+            <option>Comum</option>
+            <option>Raro</option>
+            <option>Lendário</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="repetido">
+            Repetido
+        </label>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <hr>
+
+    <div id="colecao"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
